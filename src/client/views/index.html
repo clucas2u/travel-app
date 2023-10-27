@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"> <!-- CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Travel App</h1>
+    </header>
+    <main>
+        <form id="travel-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter destination" required>
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" required>
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date">
+            <button type="submit">Get Info</button>
+        </form>
+         <div id="trip-info">
+            <div id="location-display"></div>
+            <div id="countdown"></div>
+            <div id="weather-info"></div>
+            <img id="location-image" src="">
+            <div id="trip-length"></div>
+        </div>
+        <button id="export-pdf">Export to PDF</button>
+    </main>
+    <footer>
+        <p>Travel App &copy; 2023</p>
+    </footer>
+    <script type="module" defer src="/js/app.js"></script> <!-- JavaScript file -->
+</body>
+</html>
